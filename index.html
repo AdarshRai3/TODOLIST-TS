@@ -10,26 +10,24 @@
 </head>
 
 <body class="bg-gray-900 grid place-items-center h-screen">
-  <div class="p-6 max-w-5xl b mx-auto bg-slate-800 rounded-xl shadow-lg space-y-8">
+  <div class="p-6 max-w-5xl flex-col h-96 mx-auto bg-slate-800 rounded-xl shadow-lg space-y-8">
     <!-- This is title component -->
     <div class="grid place-items-center">
       <h1 id="title" class="text-3xl text-gray-100 font-bold underline">Todo-List</h1>
     </div>
 
     <!-- This is form component -->
-    <div id="app">
-      <form id="todo-form">
-        <input required type="text" placeholder="Title" class="bg-slate-700 text-gray-50 p-2 rounded-sm ">
+    <div id="app" class ="flex flex-row justify-around">
+      <form id="todoForm" >
+        <input required type="text" name ="title" placeholder="Title" class=" bg-slate-700 text-gray-50 p-2 rounded-sm">
         <button type="submit" class="p-2 bg-blue-500  font-semibold text-gray-50 rounded-sm p-2"> Add </button>
       </form>
     </div>
 
     <!-- This is todo-container component -->
-    <div id="todo-container" class="p-2 max-w-5xl max-h-5xl mx-auto bg-gray-900 rounded-xl shadow-lg">
+    <div id="todoContainer" class="p-2 max-w-5xl  mx-auto   bg-gray-900 rounded-xl shadow-lg">
       <p class="text-gray-100"> No to-dos found</p>
     </div>
-
-
   </div>
 
   <script type="module" src="/src/main.ts"></script>
